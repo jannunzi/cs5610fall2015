@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>Forms</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#element">Form Element</a></li>
+            <li><a href="#input">Input Fields</a></li>
+            <li><a href="#number">Number Fields</a></li>
+            <li><a href="#minmax">Min Max</a></li>
+            <li><a href="#date">Date Fields</a></li>
+            <li><a href="#checkbox">Checkboxes</a></li>
+            <li><a href="#radio">Radio Buttons</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#labels">Labels</a></li>
+        </ul>
+    </nav>
+
+    <a id="element"/>
+
+    <h2>Form Element</h2>
+
+    <form action="3-form-process.html">
+        <button>Submit</button>
+    </form>
+
+<pre>
+&lt;form action=&quot;3-form-process.html&quot;&gt;
+&lt;/form&gt;</pre>
+
+    <a id="input"/>
+
+    <h2>Input Field</h2>
+<pre>
+&lt;input name=&quot;title&quot;/&gt;</pre>
+
+    <form action="3-form-process.html">
+        <input name="title"/>
+        <button>Submit</button>
+    </form>
+
+    <a id="number"/>
+
+    <h2>Number Fields</h2>
+
+<pre>Seats: &lt;input name=&quot;seats&quot; <b>type=&quot;number&quot;</b>/&gt;</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number"/><br/>
+        <button>Submit</button>
+    </form>
+
+    <a id="minmax"/>
+
+    <h2>Min and Max</h2>
+
+<pre>Seats: &lt;input name=&quot;seats&quot; type=&quot;number&quot; <b>min=&quot;0&quot; max=&quot;40&quot;</b>/&gt;</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        <button>Submit</button>
+    </form>
+
+    <a id="date"/>
+    <h2>Date Field</h2>
+
+    <pre>Start Date: &lt;input name=&quot;start&quot; <b>type=&quot;date&quot; min=&quot;2015-09-01&quot; max=&quot;2015-12-31&quot;</b>/&gt;</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        Start Date: <input name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        <button>Submit</button>
+    </form>
+
+    <a id="checkbox"/>
+    <h2>Checkboxes</h2>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        Start Date: <input name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        Grad/Undergrad: <input type="checkbox" name="level" value="graduate">Graduate <input type="checkbox" name="level" value="undergraduate">Undergraduate<br/>
+        <button>Submit</button>
+    </form>
+
+    <a id="radio"/>
+    <h2>Radio</h2>
+
+<pre>Year: &lt;input type=&quot;radio&quot; name=&quot;year&quot; value=&quot;2015&quot;/&gt;2015 &lt;input type=&quot;radio&quot; name=&quot;year&quot; value=&quot;2016&quot;/&gt;2016</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        Start Date: <input name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        Grad/Undergrad: <input type="checkbox" name="level" value="graduate">Graduate <input type="checkbox" name="level" value="undergraduate">Undergraduate<br/>
+        Year: <input type="radio" name="year" value="2015"/>2015 <input type="radio" name="year" value="2016"/>2016<br/>
+        <button>Submit</button>
+    </form>
+
+    <a id="select"/>
+    <h2>Dropdowns</h2>
+
+    <pre>&lt;select&gt;
+    &lt;option value=&quot;CS&quot;&gt;Computer Science&lt;/option&gt;
+    &lt;option value=&quot;ART&quot;&gt;Art&lt;/option&gt;
+    &lt;option value=&quot;ENG&quot; selected&gt;Engineering&lt;/option&gt;
+    &lt;option value=&quot;LAW&quot;&gt;Law&lt;/option&gt;
+    &lt;option value=&quot;BUS&quot;&gt;Business&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        Start Date: <input name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        Grad/Undergrad: <input checked type="checkbox" name="level" value="graduate">Graduate <input type="checkbox" name="level" value="undergraduate">Undergraduate<br/>
+        Year: <input type="radio" checked name="year" value="2015"/>2015 <input type="radio" name="year" value="2016"/>2016<br/>
+        School:
+        <select>
+            <option value="CS">Computer Science</option>
+            <option value="ART">Art</option>
+            <option value="ENG" selected>Engineering</option>
+            <option value="LAW">Law</option>
+            <option value="BUS">Business</option>
+        </select>
+        <br/>
+        <button>Submit</button>
+    </form>
+
+    <a id="buttons"/>
+    <h2>Buttons</h2>
+
+<pre>&lt;button name=&quot;action&quot; value=&quot;add&quot;&gt;Add&lt;/button&gt;
+&lt;button name=&quot;action&quot; value=&quot;update&quot;&gt;Update&lt;/button&gt;
+&lt;button name=&quot;action&quot; value=&quot;delete&quot;&gt;Delete&lt;/button&gt;
+&lt;button name=&quot;action&quot; value=&quot;find&quot;&gt;Find&lt;/button&gt;</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        Start Date: <input name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        Grad/Undergrad: <input type="checkbox" name="level" value="graduate">Graduate <input type="checkbox" name="level" value="undergraduate">Undergraduate<br/>
+        Year: <input type="radio" name="year" value="2015"/>2015 <input type="radio" name="year" value="2016"/>2016<br/>
+        School:
+        <select>
+            <option value="CS">Computer Science</option>
+            <option value="ART">Art</option>
+            <option value="ENG" selected>Engineering</option>
+            <option value="LAW">Law</option>
+            <option value="BUS">Business</option>
+        </select>
+        <br/>
+        <button name="action" value="add">Add</button>
+        <button name="action" value="update">Update</button>
+        <button name="action" value="delete">Delete</button>
+        <button name="action" value="find">Find</button>
+    </form>
+
+    <h2>Textarea</h2>
+
+    <pre>Description:
+&lt;textarea cols=&quot;50&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+</pre>
+
+    <form action="3-form-process.html">
+        Title: <input name="title"/><br/>
+        Seats: <input name="seats" type="number" min="0" max="40"/><br/>
+        Start Date: <input name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        Grad/Undergrad: <input type="checkbox" name="level" value="graduate">Graduate <input type="checkbox" name="level" value="undergraduate">Undergraduate<br/>
+        Year: <input type="radio" name="year" value="2015"/>2015 <input type="radio" name="year" value="2016"/>2016<br/>
+        School:
+        <select>
+            <option value="CS">Computer Science</option>
+            <option value="ART">Art</option>
+            <option value="ENG" selected>Engineering</option>
+            <option value="LAW">Law</option>
+            <option value="BUS">Business</option>
+        </select>
+        <br/>
+        Description:
+        <textarea cols="50" rows="10"></textarea>
+        <br/>
+        <button name="action" value="add">Add</button>
+        <button name="action" value="update">Update</button>
+        <button name="action" value="delete">Delete</button>
+        <button name="action" value="find">Find</button>
+    </form>
+
+
+    <a id="labels"/>
+    <h2>Labels</h2>
+
+    <pre>&lt;label for=&quot;title&quot;&gt;Title:&lt;/label&gt; &lt;input id=&quot;title&quot; name=&quot;title&quot;/&gt;&lt;br/&gt;
+Year: &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;year&quot; value=&quot;2015&quot;/&gt;2015&lt;/label&gt;
+      &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;year&quot; value=&quot;2016&quot;/&gt;2016&lt;/label&gt;</pre>
+
+    <form action="3-form-process.html">
+        <label for="title">Title:</label> <input id="title" name="title"/><br/>
+        <label for="seats">Seats:</label> <input id="seats" name="seats" type="number" min="0" max="40"/><br/>
+        <label for="start">Start Date:</label> <input id="start" name="start" type="date" min="2015-09-01" max="2015-12-31"/><br/>
+        Grad/Undergrad: <label><input type="checkbox" name="level" value="graduate">Graduate</label> <label><input type="checkbox" name="level" value="undergraduate">Undergraduate</label><br/>
+        Year: <label><input type="radio" name="year" value="2015"/>2015</label> <label><input type="radio" name="year" value="2016"/>2016</label><br/>
+        <label for="school">School:</label>
+        <select id="school">
+            <option value="CS">Computer Science</option>
+            <option value="ART">Art</option>
+            <option value="ENG" selected>Engineering</option>
+            <option value="LAW">Law</option>
+            <option value="BUS">Business</option>
+        </select>
+        <br/>
+        <label for="description">Description:</label>
+        <textarea id="description" cols="50" rows="10"></textarea>
+        <br/>
+        <button name="action" value="add">Add</button>
+        <button name="action" value="update">Update</button>
+        <button name="action" value="delete">Delete</button>
+        <button name="action" value="find">Find</button>
+    </form>
+
+</body>
+</html>
